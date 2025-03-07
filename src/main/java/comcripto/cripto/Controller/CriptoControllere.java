@@ -1,15 +1,17 @@
-package comcripto.cripto.Controller;
+  package comcripto.cripto.Controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import comcripto.cripto.Model.Cripto;
 import comcripto.cripto.Service.Servicecripto;
 
 @Controller
+
 public class CriptoControllere {
 	
 	@Autowired
@@ -21,6 +23,9 @@ public class CriptoControllere {
 		Cripto cripto =  serviceCripto.buscarCripto(nome);
 		
 		if(cripto != null) {
+			
+			
+			
 			
 			model.addAttribute("cripto",cripto);
 			
