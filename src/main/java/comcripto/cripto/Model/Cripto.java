@@ -26,6 +26,9 @@ public class Cripto {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
+	
+	
+	
 
 	public String getMarketCap() {
         DecimalFormat formatadorMarketCap = new DecimalFormat("#,##0.00");

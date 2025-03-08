@@ -22,7 +22,7 @@ public Servicecripto(RestTemplate restTemplate) {
 }
  public Cripto buscarCripto (String nome) {
 	 
-	 String url = String.format("https://api.coingecko.com/api/v3/coins/%s\r\n" , nome);
+	 String url = String.format("https://api.coingecko.com/api/v3/coins/%s" , nome);
 	 
 	 ResponseEntity<String> response = restTemplate.getForEntity(url, String.class);
 	 
@@ -33,12 +33,7 @@ public Servicecripto(RestTemplate restTemplate) {
 	JsonNode jsonNode = objectMapper.readTree(response.getBody());
 	
 	JsonNode moedaNode = jsonNode.get("market_data");
-	
-	
-     DecimalFormat formatadorMarketCap = new DecimalFormat("#,##0.00");
-     
-  
-	
+	 
          Cripto cripto = new Cripto();
      
          
