@@ -10,9 +10,7 @@ public class Configuracao {
 	
 	@Bean
 	
-	
-	
-	
+
 	public RestTemplate restTemplate() {
 		
 		return new RestTemplate();
