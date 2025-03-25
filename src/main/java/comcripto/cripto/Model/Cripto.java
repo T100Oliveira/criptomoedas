@@ -19,6 +19,11 @@ public class Cripto {
 
 	public String getNome() {
 		
+		
+		
+		
+		
+		
 
 		return nome;
 	}
