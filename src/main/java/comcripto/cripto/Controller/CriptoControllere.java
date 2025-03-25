@@ -22,9 +22,7 @@ public class CriptoControllere {
 		
 		Cripto cripto =  serviceCripto.buscarCripto(nome);
 		
-		if(cripto != null) {
-			
-			
+		if(cripto != null) {		
 			
 			
 			model.addAttribute("cripto",cripto);
