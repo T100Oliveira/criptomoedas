@@ -22,14 +22,10 @@ public class CriptoControllere {
 		
 		Cripto cripto =  serviceCripto.buscarCripto(nome);
 		
-		if(cripto != null) {
-			
-			
+		if(cripto != null) {		
 			
 			
 			model.addAttribute("cripto",cripto);
-			
-			
 			
 		}else { model.addAttribute("erro", "moeda não encontrada ou erro ao buscar dados.");}
 		return "cripto";
