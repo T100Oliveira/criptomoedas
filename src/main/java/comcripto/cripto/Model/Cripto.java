@@ -26,8 +26,7 @@ public class Cripto {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	
-	
+
 	
 
 	public String getMarketCap() {
