@@ -19,6 +19,11 @@ public class Cripto {
 
 	public String getNome() {
 		
+		
+		
+		
+		
+		
 
 		return nome;
 	}
@@ -26,14 +31,15 @@ public class Cripto {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	
-	
+
 	
 
 	public String getMarketCap() {
         DecimalFormat formatadorMarketCap = new DecimalFormat("#,##0.00");
         String marketCapFormatado = formatadorMarketCap.format(marketCap);
 		return  marketCapFormatado;
+		
+		
 	}
 
 	public void setMarketCap(BigDecimal bigDecimal) {
