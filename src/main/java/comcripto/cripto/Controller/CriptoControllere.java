@@ -24,7 +24,6 @@ public class CriptoControllere {
 		
 		if(cripto != null) {		
 			
-			
 			model.addAttribute("cripto",cripto);
 			
 		}else { model.addAttribute("erro", "moeda não encontrada ou erro ao buscar dados.");}
