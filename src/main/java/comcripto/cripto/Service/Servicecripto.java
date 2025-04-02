@@ -38,7 +38,6 @@ public Servicecripto(RestTemplate restTemplate) {
 	JsonNode moedaNode = jsonNode.get("market_data");
 	 
          Cripto cripto = new Cripto();
-     
          
          cripto.setNome(nome); // Nome da moeda
          cripto.setPrecoUsd(moedaNode.get("current_price").get("usd").decimalValue()); // Preço em USD

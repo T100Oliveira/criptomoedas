@@ -18,12 +18,6 @@ public class Cripto {
 	private BigDecimal precoUsd;
 
 	public String getNome() {
-		
-		
-		
-		
-		
-		
 
 		return nome;
 	}
@@ -31,8 +25,6 @@ public class Cripto {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-
-	
 
 	public String getMarketCap() {
         DecimalFormat formatadorMarketCap = new DecimalFormat("#,##0.00");
@@ -54,10 +46,5 @@ public class Cripto {
 	public void setPrecoUsd(BigDecimal bigDecimal) {
 		this.precoUsd = bigDecimal;
 	}
-
-
-
-	
-
 
 }
